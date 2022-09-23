@@ -45,12 +45,12 @@ public class MethodInvocations {
 		ValueExpression e = null;
 		
 		e = f.createValueExpression(context, "${'foo'.matches('foo|bar')}", boolean.class);
-		System.out.println(e.getValue(context)); // --> true
+		System.out.println(e.getValue(context).toString()); // --> true
 		
 		e = f.createValueExpression(context, "${'bar'.toUpperCase()}", String.class);
-		System.out.println(e.getValue(context)); // --> BAR
+		System.out.println(e.getValue(context).toString()); // --> BAR
 		
 		e = f.createValueExpression(context, "${'foobar '.trim().length()}", int.class);
-		System.out.println(e.getValue(context)); // --> 6
+		System.out.println(e.getValue(context).toString()); // --> 6
 	}
 }

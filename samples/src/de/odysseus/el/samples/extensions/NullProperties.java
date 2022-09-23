@@ -46,6 +46,6 @@ public class NullProperties {
 		context.getELResolver().setValue(context, null, "map", map);
 
 		// let's go...
-		System.out.println(e.getValue(context)); // --> "foo"
+		System.out.println(e.getValue(context).toString()); // --> "foo"
 	}
 }

@@ -43,6 +43,6 @@ public class VarArgs {
 
 		// let's go...
 		ValueExpression e = f.createValueExpression(context, expression, String.class);
-		System.out.println(e.getValue(context)); // --> Hey Joe
+		System.out.println(e.getValue(context).toString()); // --> Hey Joe
 	}
 }
